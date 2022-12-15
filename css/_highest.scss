@@ -1,0 +1,65 @@
+.highest{
+    padding:0 5% 5%;
+    @media(min-width:1200px){
+        padding:0 3% 3%;
+    }
+    .inner{
+        background: rgba(242, 242, 242, 0.45);
+        padding-top:5%;
+        border-radius: 10px; 
+        padding-bottom:5%;   
+        @media(min-width:992px){
+            padding-bottom:1%;
+        }
+        h2{
+            @include h2styles();
+        }
+        .cards{
+            @media(min-width:768px){
+                display:flex;
+                margin-top:40px;
+            }
+            .card-inner{
+                @include cardstyles();
+                width:90%;
+                padding-bottom:20px;
+                margin:80px auto 30px;
+                max-width:340px;
+                @media(min-width:768px){
+                    width:30%;
+                    height:255px;
+                }
+                @media(min-width:1100px){
+                    height:350px;
+                    max-width:400px;
+                }
+                @media(min-width:1300px){
+                    height:385px;
+                }
+                .bottom-buttons{
+                    display: flex;
+                    justify-content:space-between;
+                    width:90%;
+                    margin-top:20px;
+
+                    button{
+                        @include buttonstyles(#ffffff, $red);
+                        width:31%;
+                        @media(min-width:768px){
+                            font-size:11px;
+                        }
+                        @media(min-width:992px){
+                            font-size:13px;
+                        }
+                        @media(min-width:1200px){
+                            font-size:15px;
+                        }
+                        &:last-child{
+                            @include buttonstyles($red, #ffffff);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

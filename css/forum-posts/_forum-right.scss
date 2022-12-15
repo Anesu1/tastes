@@ -1,0 +1,144 @@
+.forums-posts-body{
+    padding:5% 5% 5%;
+    position:relative;
+    @media(min-width:992px){
+        display:flex;
+        justify-content: space-between;
+        padding-left:0;
+        padding-top:0;
+        padding-right:2%;
+
+    }
+    .forums-right{
+        @media(min-width:992px){
+            width:70%;
+        }
+        .top{
+            background:$red;
+            color:$white;
+            border-radius:0 0 10px 10px;
+            top:0;
+            left:5%;
+            position:absolute;
+            height:50px;
+            padding:0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media(min-width:992px){
+                left:28%;
+            }
+            a, span{
+                text-decoration:none;
+                color:$white;
+                font-family:$medium;
+                font-size:20px;
+                opacity: 0.7;
+            }
+            span{
+                margin:0 10px;
+            }
+        
+            .link{
+                opacity:1;
+        
+            }
+        }
+        .bottom{
+            margin-top:15%;
+            @media(min-width:768px){
+                margin-top:8%;
+            }
+            @media(min-width:1200px){
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+            }
+                .popular-topics{
+                    h3{
+                        font-family:$medium;
+                        color:$red;
+                        font-size:25px;
+                        margin-bottom:10px;
+
+                    }
+                }
+            
+            .popular-topics{
+                .story{
+                    .story-card{
+                        @include story-card();
+                    }
+                }
+                hr{
+                    background:$red;
+                    border:none;
+                    width:100%;
+                    height:2px;
+                }
+                .back-to-top{
+                    display: block;
+                    text-decoration:none;
+                    padding:20px;
+                    margin:0 auto;
+                    text-align: center;
+                    font-family:$medium;
+                    font-size:20px;
+                    color:$black;
+
+                }
+            }
+            .similar-topics{
+                @media(min-width:768px){
+                    display:flex;
+                    justify-content: space-between;
+                    flex-wrap:wrap;
+
+                }
+                @media(min-width:1200px){
+                    margin-left:30px;
+                }
+                .top-title{
+                    background: #F7F7F7;
+                height:70px;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                border-radius: 5px;
+                width:100%;
+                
+                h4{
+                    font-family:$medium;
+                    font-size:23px;
+                }
+                }
+                a{
+                    text-decoration:none;
+                    color:$black;
+                    padding:10px;
+                    margin-bottom:20px;
+                    @media(min-width:768px){
+                        width:47%;
+                    }
+                    @media(min-width:1200px){
+                        width:100%;
+                    }
+                    h5{
+                        font-size:18px;
+                        font-family:$medium;
+                        color:$black;
+                        margin-bottom:5px;
+                    }
+                    .img{
+                        height:150px;
+                        border-radius:10px;
+                        width:100%;
+                        background:url("../images/forumposts/similar.png");
+                        background-size:cover;
+                    }
+                }
+            }
+        }
+    }
+}

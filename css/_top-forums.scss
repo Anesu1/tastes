@@ -1,0 +1,134 @@
+.top-forums{
+    padding:5%;
+    h2{
+        @include h2styles();
+        margin-bottom:30px;
+    }
+    .top-forums-inner{
+        @media(min-width:992px){
+            display:flex;
+            justify-content:space-between;
+        }
+         .story{
+        @media(min-width:992px){
+            width:68%;
+        }
+        .story-card{
+            @include story-card();
+        }
+    }
+    hr{
+        @media(min-width:768px){
+             border:none;
+        background:#BFBFBF;
+        height:1px;
+        width:100%;
+        }
+       
+    }
+    .contributors{
+        @media(min-width:768px){
+            display:flex;
+            justify-content:space-between;
+        }
+        @media(min-width:992px){
+            width:28%;
+            flex-direction:column;
+            justify-content: unset;
+        }
+        .inner{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.17);
+            border-radius: 8px;
+            margin-bottom:30px;
+            @media(min-width:768px){
+                width:47%;
+            }
+            @media(min-width:992px){
+                width:100%;
+            }
+            .top{
+                background: #F7F7F7;
+                height:70px;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                border-radius: 5px;
+                h4{
+                    font-family:$medium;
+                    font-size:23px;
+                }
+            }
+            .contributor{
+                margin:0 13px;
+                transition:all 0.7s ease;
+                border-radius: 9px;
+                display: flex;
+                align-items:center;
+                justify-content:space-between;
+                height:80px;
+                padding:0 13px;
+                &:hover{
+                    background:#f7f7f7;
+                }
+                img{
+                    width:60px;
+                    border-radius:50%;
+                    margin-right:15px;
+                }
+                h4{
+                    flex:1;
+                    font-family:$medium;
+                    color:#000000;
+                    opacity:0.67;
+                    font-size:18px;
+                }
+                .amount{
+                    span{
+                        font-family:$medium;
+                        color:#3C3C3C;
+                    }
+                    .down{
+                        color:$red;
+                    }
+                    .up{
+                        color:$blue;
+                    }
+                }
+            }
+        }
+        .bottom-contributor{
+            height:400px;
+            width:100%;
+            background:url('../images/landingpage/beerlast.png');
+            background-size:cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius:8px;
+            padding-bottom:30px;
+            @media(min-width:768px){
+                width:47%;
+                height:280px;
+            }
+            @media(min-width:992px){
+                width:100%;
+            }
+            a{
+                font-family:$medium;
+                text-transform:uppercase;
+                text-decoration:none;
+                color:$white;
+                font-size:22px;
+                padding-bottom:3px;
+                border-bottom:1px solid $white;
+            }
+            img{
+                width:15px;
+
+            }
+        }
+    }
+    }
+   
+}

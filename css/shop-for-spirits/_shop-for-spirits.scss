@@ -1,0 +1,13 @@
+.shop-for-spirit{
+    .left{
+        background:$grey;
+        padding:5%;
+        img{
+            width:50px;
+        }
+        .drop-down{
+            @include dropDown();
+            margin-bottom:10px;
+        }
+    }
+}

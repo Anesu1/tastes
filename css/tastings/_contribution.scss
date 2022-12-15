@@ -1,0 +1,46 @@
+.contribution{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.285),rgba(0, 0, 0, 0.285)),url('../images/tastings/contribution-bg.png');
+    background-size:cover;
+    background-position:right center;
+    padding:20% 5%;
+    margin-bottom:50px;
+    @media(min-width:992px){
+        background:url('../images/tastings/contribution-bg.png');
+    background-size:cover;
+    background-position:left center;
+    padding:15% 5%;
+    }
+    .contribution-inner{
+        @media(min-width:768px){
+            width:60%;
+
+        }
+        @media(min-width:992px){
+            width:500px;
+        }
+        h2{
+            font-size:25px;
+            font-family:$medium;
+            color:$white;
+            margin-bottom:15px;
+            @media(min-width:768px){
+                font-size:40px;
+            }
+            @media(min-width:992px){
+                font-size:55px;
+            }
+        }
+        p{
+            @include pstyles();
+            color:$white;
+            margin-bottom:10px;
+        }
+        button{
+            @include biggerbutton();
+            border-radius:3px;
+            color:$white;
+            padding:0 20px;
+
+        }
+    }
+}

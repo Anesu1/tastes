@@ -1,0 +1,36 @@
+@import "./reset";
+@import "./variables";
+@import "./mixin";
+
+// preloader
+@import "./preloader";
+
+// Landing page
+@import "./header";
+@import "./homebanner";
+@import "./highest";
+@import "./top-forums";
+@import "./footer";
+
+
+// tastings         
+@import "./tastings/banner";
+@import "./tastings/contribution";
+@import "./tastings/product-details";
+
+//forums posts
+@import "./forum-posts/forum-left";
+@import "./forum-posts/forum-right";
+
+// community ratings
+@import "./community-ratings/community-rating";
+
+// about us
+@import "./about/about";
+
+
+//faqs
+@import "./faqs/faqs";
+
+//shop for spirits
+@import "./shop-for-spirits/shop-for-spirits";

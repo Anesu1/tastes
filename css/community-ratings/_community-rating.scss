@@ -1,0 +1,177 @@
+.community-rating{
+    position:relative;
+
+    @media(min-width:768px){
+        padding-top:0;
+
+    }
+    @media(min-width:1200px){
+        display:flex;
+        align-items: flex-end;
+    }
+    .left{
+        background:#890620;
+        padding:5%;
+        padding-top:15%;
+        @media(min-width:768px){
+            padding-top:5%;
+            
+        }
+        @media(min-width:1200px){
+            width:28%;
+            padding:5% 20px 20px 20px;
+        }
+        .repeated-title{
+            position: relative;
+            margin-bottom:20px;
+            h4{
+                color:$white;
+                font-family:$medium;
+                font-size:20px;
+                margin-top:20px;
+                position: relative;
+                &:before{
+                    position:absolute;
+                    height:2px;
+                    width:40%;
+                    top:50%;
+                    right:0;
+                    content:"";
+                    background:$yellow;
+                }
+            }
+        }
+        .ratings{
+            @media(min-width:768px){
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .rating{
+                background:#980B27;
+                border-radius:3px;
+                padding:15px;
+                margin-bottom:20px;
+                @media(min-width:768px){
+                    width:44.5%;
+                    padding:10px;
+                }
+                @media(min-width:1200px){
+                    width:100%;
+                }
+                .stars{
+                    margin-bottom:10px;
+                    span{
+                        color:$white;
+                        font-size:15px;
+                    }
+                    .checked{
+                        color:$yellow;
+                    }
+                }
+                p{
+                    @include pstyles();
+                    color:$white;
+                    margin-bottom:5px;
+                    
+                }
+                .user-details{
+                    
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                    
+                    .details{
+                        display: flex;
+                        align-items:center;
+                        
+                        img{
+                            width:50px;
+                            margin-right:10px;
+                            border-radius:50%;
+                            @media(min-width:1200px){
+                                width:35px;
+                                margin-right:5px;
+                            }
+                        }
+                        p{
+                            @include pstyles();
+                            span{
+                                font-weight:700;
+                                font-family:$medium;
+                                color:$white;
+                            }
+                        }
+                        
+                    }
+                    .time{
+                        p{
+                            @include pstyles();
+                            color:$white;
+                            font-family:$medium;
+                            font-size:14px;
+                            @media(min-width:1200px){
+                                font-size:12px;
+                                margin-bottom:5px;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    .top{
+        background:#980B27;
+        color:$white;
+        border-radius:0 0 10px 10px;
+        top:0;
+        left:5%;
+        position:absolute;
+        height:50px;
+        padding:0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(min-width:992px){
+            left:2%;
+        }
+        a, span{
+            text-decoration:none;
+            color:$white;
+            font-family:$medium;
+            font-size:20px;
+            opacity: 0.7;
+        }
+        span{
+            margin:0 10px;
+        }
+    
+        .link{
+            opacity:1;
+    
+        }
+    }
+    .product{
+        @media(min-width:1200px){
+            width:74%;
+        }
+        .product-right{
+            .top-title{
+            h2{
+                color:$black !important;
+            }
+            
+        }
+        }
+        .product-left .product-left-bottom a{
+            width:50px;
+            height:35px;
+            i{
+                font-size:20px;
+            }
+        }
+        
+    }
+}

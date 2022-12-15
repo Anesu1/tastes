@@ -1,0 +1,108 @@
+.faqs{
+    padding:5%;
+    @media(min-width:992px){
+        padding:5% 2%;
+    }
+    h2{
+        @include h2styles();
+        font-size:25px;
+        margin-top:50px;
+        margin-bottom:20px;
+        @media(min-width:992px){
+            font-size:45px;
+            margin-bottom:50px;
+        }
+    }
+    .faq-inner{
+        @media(min-width:768px){
+            display:flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+        }
+        .faq-card{
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
+border-radius: 8px;
+margin-bottom:20px;
+padding:20px;
+@media(min-width:768px){
+    width:43%;
+}
+@media(min-width:992px){
+    width:28%;
+}
+@media(min-width:1200px){
+    width:29.5%;
+}
+h3{
+    font-family:$medium;
+    color:$red;
+    font-size:20px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+p{
+    @include pstyles();
+    margin-bottom:10px;
+}
+        }
+    }
+    .still{
+        background:$red;
+        margin:20px 0;
+        border-radius:8px;
+
+        @media(min-width:768px){
+            display:flex;
+            align-items: flex-end;
+            height:230px;
+            
+        }
+        @media(min-width:992px){
+            height:260px;
+            margin: 100px 0 50px;
+        }
+        @media(min-width:1200px){
+            height:300px;
+        }
+        .left{
+            background:url("../images/faqs/bg.png");
+            background-size:cover;
+            color:$white;
+            padding:20px;
+            @media(min-width:768px){
+                flex:1;
+                padding:0 30px;
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                height:230px;
+            }
+            @media(min-width:992px){
+                height:260px;
+                padding-left:60px;
+            }
+            @media(min-width:1200px){
+                height:300px;
+            }
+            h3{
+                font-size:20px;
+                @include h2styles();
+                color:$white;
+                margin-bottom:10px;
+                text-align: left;
+
+            }
+            p{
+                @include pstyles();
+            }
+        }
+        img{
+            margin-top:30px;
+            width:80%;
+            max-width:350px;
+            @media(min-width:768px){
+                width:30%;
+            }
+        }
+    }
+}
